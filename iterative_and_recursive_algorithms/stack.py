@@ -20,16 +20,15 @@ def recursion(arg):
 # recursion(False)
 
 
-def countDownAndUp(number):
-    print(number)
+def counter(number):
     if number == 0:                                     # базовый случай
         print("Достигнут базовый случай")
         return
     else:                                               # рекурсивный случай
-        countDownAndUp(number - 1)
+        counter(number - 1)
         print(number, " возвращается ")
         return
-# countDownAndUp(3)
+counter(1000)
 
 def factorial(num):
     showcallstack()
@@ -37,4 +36,4 @@ def factorial(num):
         return 1
     else:
         return num * factorial(num - 1)
-# factorial(4)
+# factorial(999)
